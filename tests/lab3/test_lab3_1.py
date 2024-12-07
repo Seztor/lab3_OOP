@@ -1,11 +1,11 @@
 import unittest
-from src.lab3.task1_opp import FilmRecommendation
+from src.lab3.FilmRecommendationAdapter import FilmRecommendationAdapter
 
 
 class FilmsAdapterTestCase(unittest.TestCase):
     films_data = [(1, 'Хатико'), (2, 'Мстители'), (3, 'Титаник'), (4, 'Джуманджи'), (5, 'Хакер')]
     users_data = [[1, 3, 5, 2], [2, 3, 4], [1], [3], [4, 4, 5], [1, 2, 3, 4, 5], [2, 3, 4]]
-    film_adapter = FilmRecommendation(films_data=films_data, users_data=users_data)
+    film_adapter = FilmRecommendationAdapter(films_data=films_data, users_data=users_data)
 
 
     def test_search_users_with_similar_films(self):

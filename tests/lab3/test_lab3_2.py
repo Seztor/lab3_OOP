@@ -1,5 +1,5 @@
 import unittest
-from src.lab3.task2_oop import AgeGroupsAdapter
+from src.lab3.AgeGroupsAdapter import AgeGroupsAdapter
 
 
 class AgeGroupAdapterTestCase(unittest.TestCase):
