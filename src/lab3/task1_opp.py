@@ -22,7 +22,7 @@ if __name__ == "__main__":
         films_data.append((id_film, name_film))
 
 
-    '''Создание класса и получение фильма'''
+    '''Создание экземпляра класса и получение фильма'''
     filmAdapter = FilmRecommendationAdapter(films_data=films_data, users_data=users_data)
 
     try:

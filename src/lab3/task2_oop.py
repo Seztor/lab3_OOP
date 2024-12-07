@@ -16,7 +16,7 @@ if __name__ == "__main__":
             print("Ошибка ввода:",e)
         st = input()
 
-    '''Создание класса и получение групп возрастов'''
+    '''Создание экземпляра класса и получение групп возрастов'''
     ageGroupAdapter = AgeGroupsAdapter(ages_data=ages_data, people_data=people_data)
     ageGroupAdapter.display_data()
 

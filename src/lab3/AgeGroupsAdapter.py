@@ -5,7 +5,7 @@ class AgeGroupsAdapter:
     '''Класс позволяющих разделять людей на возрастные группы'''
 
     def __init__(self, ages_data: tp.List[int], people_data: tp.List[tp.Tuple[str,int]]):
-        '''Инициализация класса'''
+        '''Объявление атрибутов класса'''
         self.ages_data = [-1] + ages_data + [123]
         self.people_data = people_data
         self.ages_groups_dict = {(self.ages_data[i]+1,self.ages_data[i+1]):list() for i in range(len(self.ages_data)-1)}
